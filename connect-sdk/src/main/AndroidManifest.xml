@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mastercard.openbanking.connect">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application>
+        <activity android:name="com.mastercard.openbanking.connect.Connect" />
+        <activity android:name="com.mastercard.openbanking.connect.CustomTabsActivityManager" />
+        <activity android:name="financial.atomic.transact.activity.TransactActivity"/>
+    </application>
+
+</manifest>

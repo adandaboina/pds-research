@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Connect SDK demo app</string>
+    <string name="handler_start_button_text">Launch Connect</string>
+    <string name="demo_app_title_connect">To get started, copy/paste a Generate URL value into the field below.</string>
+    <string name="demo_app_title_connect_pds">To get started, copy/paste a Generate URL value or a Public Token into the field below.</string>
+    <string name="demo_app_edittext_hint_connect">Paste Generate URL here</string>
+    <string name="demo_app_edittext_hint_connect_pds">Paste Generate URL or Public Token here</string>
+</resources>
