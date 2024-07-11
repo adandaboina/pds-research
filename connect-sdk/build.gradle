@@ -55,7 +55,9 @@ android {
     if (secretPropsFile.exists()) {
         properties.load(project.rootProject.file("local.properties").newDataInputStream())
     }
-
+    lintOptions {
+        checkReleaseBuilds false
+    }
 
     defaultConfig {
         minSdkVersion 21
