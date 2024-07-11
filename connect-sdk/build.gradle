@@ -144,11 +144,10 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
 
-                from components.findByName('release')
+//                from components.findByName('release')
                 groupId = 'com.github.adandaboina'
                 artifactId = 'pds-research'
-                version = '0.0.5'
-                artifact androidSourcesJar
+                version = '0.0.6'
 
                 pom {
                     withXml {
