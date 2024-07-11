@@ -142,10 +142,9 @@ publishing {
         release(MavenPublication) {
 
             from components.findByName('release')
-
             groupId = 'com.github.adandaboina'
             artifactId = 'pds-research'
-            version = '0.0.1'
+            version = '0.0.2'
 
             pom {
                 withXml {
