@@ -140,6 +140,9 @@ ext {
 publishing {
     publications {
         release(MavenPublication) {
+
+            from components.findByName('release')
+
             groupId = 'com.github.adandaboina'
             artifactId = 'pds-research'
             version = '0.0.1'
@@ -163,9 +166,9 @@ publishing {
                 }
             }
 
-            afterEvaluate {
-                from components.findByName('release')
-            }
+//            afterEvaluate {
+//                from components.findByName('release')
+//            }
         }
     }
 }
