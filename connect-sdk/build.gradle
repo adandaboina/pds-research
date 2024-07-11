@@ -142,7 +142,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.adandaboina'
             artifactId = 'pds-research'
-            version = 'main-SNAPSHOT'
+            version = '0.0.1'
 
             pom {
                 withXml {
