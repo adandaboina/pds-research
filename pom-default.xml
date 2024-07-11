@@ -6,7 +6,7 @@
     <groupId>com.github.adandaboina</groupId>
     <artifactId>pds-research</artifactId>
     <version>0.0.6</version>
-    <packaging>pom</packaging>
+    <packaging>aar</packaging>
     <name>adandaboina/pds-research</name>
     <url>https://github.com/adandaboina/pds-research</url>
     <inceptionYear>2024</inceptionYear>

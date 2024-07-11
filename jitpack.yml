@@ -2,4 +2,4 @@ jdk:
   - openjdk11
 install:
   - FILE="-Dfile=connect-pds.aar"
-  - mvn install:install-file $FILE -DgroupId=com.github.adandaboina -DartifactId=pds-research -Dversion=0.0.6 -Dpackaging=aar -DpomFile=pom-default.xml
+  - mvn install:install-file $FILE -Dpackaging=aar -DpomFile=pom-default.xml

@@ -139,15 +139,15 @@ ext {
     PUBLISH_ARTIFACT_ID = 'connect-sdk'
 }
 
-afterEvaluate {
+//afterEvaluate {
     publishing {
         publications {
-            release(MavenPublication) {
+            maven(MavenPublication) {
 
 //                from components.findByName('release')
                 groupId = 'com.github.adandaboina'
                 artifactId = 'pds-research'
-                version = '0.0.6'
+                version = '0.0.7'
 
                 pom {
                     withXml {
@@ -169,8 +169,11 @@ afterEvaluate {
                 }
             }
         }
+        repositories {
+            mavenLocal()
+        }
     }
-}
+//}
 task androidSourcesJar(type: Jar) {
     archiveClassifier.set("sources")
     from android.sourceSets.main.java.srcDirs
