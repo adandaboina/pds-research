@@ -1,7 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'jacoco'
 apply plugin: 'maven-publish'
-//apply plugin: 'signing'
 jacoco {
     toolVersion = '0.8.6' //Use latest version
 }
@@ -143,11 +142,9 @@ ext {
     publishing {
         publications {
             maven(MavenPublication) {
-
-//                from components.findByName('release')
                 groupId = 'com.github.adandaboina'
                 artifactId = 'pds-research'
-                version = '0.0.7'
+                version = '1.0.0'
 
                 pom {
                     withXml {
@@ -173,7 +170,6 @@ ext {
             mavenLocal()
         }
     }
-//}
 task androidSourcesJar(type: Jar) {
     archiveClassifier.set("sources")
     from android.sourceSets.main.java.srcDirs
